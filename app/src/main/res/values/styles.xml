@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="btn_style">
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:width">90dp</item>
+        <item name="android:height">100dp</item>
+        <item name="android:backgroundTint">#FF2B2B2D</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="btn_style_operator">
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:width">90dp</item>
+        <item name="android:height">100dp</item>
+        <item name="android:backgroundTint">#FFFF9F0A</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="btn_style_Clear">
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:width">90dp</item>
+        <item name="android:height">100dp</item>
+        <item name="android:backgroundTint">#FF5C5C5E</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+</resources>

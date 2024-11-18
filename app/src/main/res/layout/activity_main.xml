@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/firstValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray"
+        android:layout_marginBottom="-60dp"
+        android:layout_above="@id/display_input"
+        android:background="@null"
+        android:maxLength="30"
+        android:paddingEnd="10dp"
+        android:textSize="36sp"
+        android:gravity="right"
+        style="style_displayText"
+        tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/display_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_grid"
+        android:layout_alignParentBottom="@id/btn_grid"
+        android:layout_marginTop="60dp"
+        android:background="@null"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="right"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:maxLength="30"
+        android:paddingEnd="10dp"
+        android:text="@string/zero"
+        android:textColor="@color/white"
+        android:textSize="42sp"
+        tools:ignore="LabelFor,RtlHardcoded,RtlSymmetry,DuplicateSpeakableTextCheck,VisualLintTextFieldSize" />
+
+    <GridLayout
+        android:id="@+id/btn_grid"
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:rowCount="5"
+        android:columnCount="4">
+
+        <Button
+            android:id="@+id/btn_C"
+            android:layout_column="0"
+            android:layout_columnSpan="2"
+            android:layout_columnWeight="1"
+            android:text="@string/fullclear"
+            style="@style/btn_style_Clear"
+            android:onClick="click_C"/>
+
+        <Button
+            android:id="@+id/btn_CE"
+            android:layout_column="2"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="0"
+            android:text="@string/clearOne"
+            style="@style/btn_style_Clear"
+            android:onClick="click_Ce"/>
+
+        <Button
+            android:id="@+id/btn_shape"
+            style="@style/btn_style_operator"
+            android:layout_column="3"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="0"
+            android:onClick="clickOperation"
+            android:text="@string/shape"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/btn_7"
+            android:layout_column="0"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="0"
+            android:text="@string/seven"
+            style="@style/btn_style"
+            android:onClick="click_Num"/>
+
+        <Button
+            android:id="@+id/btn_8"
+            android:layout_column="1"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="0"
+            android:text="@string/eight"
+            style="@style/btn_style"
+            android:onClick="click_Num"/>
+
+        <Button
+            android:id="@+id/btn_9"
+            android:layout_column="2"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="0"
+            android:text="@string/nine"
+            style="@style/btn_style"
+            android:onClick="click_Num"/>
+
+        <Button
+            android:id="@+id/btn_multiply"
+            style="@style/btn_style_operator"
+            android:layout_column="3"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="0"
+            android:onClick="clickOperation"
+            android:text="@string/multiply"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/btn_4"
+            android:layout_column="0"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="0"
+            android:text="@string/four"
+            style="@style/btn_style"
+            android:onClick="click_Num"/>
+
+        <Button
+            android:id="@+id/btn_5"
+            android:layout_column="1"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="0"
+            android:text="@string/five"
+            style="@style/btn_style"
+            android:onClick="click_Num"/>
+
+        <Button
+            android:id="@+id/btn_6"
+            android:layout_column="2"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="0"
+            android:text="@string/six"
+            style="@style/btn_style"
+            android:onClick="click_Num"/>
+
+        <Button
+            android:id="@+id/btn_minus"
+            style="@style/btn_style_operator"
+            android:layout_column="3"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="0"
+            android:onClick="clickOperation"
+            android:text="@string/minus"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/btn_1"
+            android:layout_column="0"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="0"
+            android:text="@string/one"
+            style="@style/btn_style"
+            android:onClick="click_Num"/>
+
+        <Button
+            android:id="@+id/btn_2"
+            android:layout_column="1"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="0"
+            android:text="@string/two"
+            style="@style/btn_style"
+            android:onClick="click_Num"/>
+
+        <Button
+            android:id="@+id/btn_3"
+            android:layout_column="2"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="0"
+            android:text="@string/three"
+            style="@style/btn_style"
+            android:onClick="click_Num"/>
+
+        <Button
+            android:id="@+id/btn_plus"
+            style="@style/btn_style_operator"
+            android:layout_column="3"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="0"
+            android:onClick="clickOperation"
+            android:text="@string/plus"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/btn_0"
+            android:layout_column="0"
+            android:layout_columnSpan="2"
+            android:layout_columnWeight="1"
+            android:text="@string/zero"
+            style="@style/btn_style"
+            android:onClick="click_Num"/>
+
+        <Button
+            android:id="@+id/btn_dot"
+            android:layout_column="2"
+            android:layout_columnSpan="0"
+            android:layout_columnWeight="0"
+            android:text="@string/dot"
+            style="@style/btn_style"
+            android:onClick="clickDot"/>
+
+        <Button
+            android:id="@+id/btn_result"
+            style="@style/btn_style_operator"
+            android:layout_column="3"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="0"
+            android:onClick="click_result"
+            android:text="@string/result"
+            tools:ignore="TextContrastCheck" />
+
+    </GridLayout>
+
+
+</RelativeLayout>
